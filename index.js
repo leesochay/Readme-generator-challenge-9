@@ -1,41 +1,9 @@
 function init () {
 
-  // TODO: Include packages needed for this application
   const inquirer = require('inquirer');
   const fs = require('fs');
   const generateMarkdown = require('./utils/generateMarkdown.js');
 
-
-
-
-
-
-  
-  // generateMarkdown = ({ title, description, installation, usage, contributing, tests}) =>
-  // `# ${title}
-  
-  // ## Table of Contents (Optional)
-  //         -Description
-  //         -Installation
-  //         -Usage
-  //         -Contributing
-  //         -Tests
-  
-  // ## Description
-  // ${description}
-  
-  // ## Installation
-  // ${installation}
-      
-  // ## Usage
-  // ${usage}
-      
-  // ## Contributing
-  // ${contributing}
-  
-  // ## Tests
-  // ${tests}`;
-  
   inquirer
   .prompt([
       {
@@ -67,6 +35,21 @@ function init () {
           type: 'input',
           name: 'tests',
           message: 'Include any tests for your application and how to run them.',
+        },
+        {
+          type: 'input',
+          name: 'license',
+          message: 'What is the license for this applciation?',
+        },
+        {
+          type: 'input',
+          name: 'github',
+          message: 'What is the url for your github profile?',
+        },
+        {
+          type: 'input',
+          name: 'email',
+          message: 'What is youur email address to connect with users?',
         },
       ])
   
