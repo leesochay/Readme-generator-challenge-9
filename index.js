@@ -3,31 +3,38 @@ function init () {
   // TODO: Include packages needed for this application
   const inquirer = require('inquirer');
   const fs = require('fs');
+  const generateMarkdown = require('./utils/generateMarkdown.js');
+
+
+
+
+
+
   
-  generateMarkdown = ({ title, description, installation, usage, contributing, tests}) =>
-  `# ${title}
+  // generateMarkdown = ({ title, description, installation, usage, contributing, tests}) =>
+  // `# ${title}
   
-  ## Table of Contents (Optional)
-          -Description
-          -Installation
-          -Usage
-          -Contributing
-          -Tests
+  // ## Table of Contents (Optional)
+  //         -Description
+  //         -Installation
+  //         -Usage
+  //         -Contributing
+  //         -Tests
   
-  ## Description
-  ${description}
+  // ## Description
+  // ${description}
   
-  ## Installation
-  ${installation}
+  // ## Installation
+  // ${installation}
       
-  ## Usage
-  ${usage}
+  // ## Usage
+  // ${usage}
       
-  ## Contributing
-  ${contributing}
+  // ## Contributing
+  // ${contributing}
   
-  ## Tests
-  ${tests}`;
+  // ## Tests
+  // ${tests}`;
   
   inquirer
   .prompt([
