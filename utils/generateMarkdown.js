@@ -21,8 +21,7 @@ function generateMarkdown(data) {
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [License](#license)
-  - [GitHub](#github)
-  - [Email](#email)
+  - [Questions](#questions)
 
 ## Description
 ${data.description}
@@ -42,11 +41,9 @@ ${data.tests}
 ## License
 ${data.license}
 
-## GitHub
-My GitHub username is ${data.github} and you can link to my profile at https://github.com/${data.github}.
-
-## Email
-${data.email}`;
+## Questions
+My GitHub username is ${data.github} and you can link to my profile at https://github.com/${data.github}.  
+For any questions, please feel free to email me at ${data.email}`;
 }
 
 module.exports = generateMarkdown;
