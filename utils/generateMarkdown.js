@@ -43,7 +43,7 @@ ${data.tests}
 ${data.license}
 
 ## GitHub
-${data.github}
+My GitHub username is ${data.github} and you can link to my profile at https://github.com/${data.github}.
 
 ## Email
 ${data.email}`;
