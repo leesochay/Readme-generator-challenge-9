@@ -37,10 +37,11 @@ function init () {
           message: 'Include any tests for your application and how to run them.',
         },
         {
-          type: 'input',
+          type: 'checkbox',
           name: 'license',
-          message: 'What is the license for this applciation?',
-        },
+          message: 'Please select an open source license, or "Other" if open source is not applicable.',
+          choices: ['GNU General Public License v3.0', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'Other' ],
+          },
         {
           type: 'input',
           name: 'github',
