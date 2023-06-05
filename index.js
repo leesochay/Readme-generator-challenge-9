@@ -1,9 +1,12 @@
 function init () {
 
+ // required packages and modules to generate the README.md document
   const inquirer = require('inquirer');
   const fs = require('fs');
   const generateMarkdown = require('./utils/generateMarkdown.js');
 
+ // npm inquirer package utilzing the command line interface for questions and answers in creating a README.md document 
+ // questions section
   inquirer
   .prompt([
       {
@@ -53,14 +56,12 @@ function init () {
           message: 'What is youur email address where users can connect with you?',
         },
       ])
-  
+  // answers object generated that will used in the creation of the README.md document through the generateMarkdown function
       .then((answers) => {
-        console.log(answers)  
         const badge = 'badge';
         answers[badge] = '';
         const url = 'url';
         answers[url] = '';
-        console.log(answers)
         const readmePageContent = generateMarkdown(answers);
           fs.writeFile('README.md', readmePageContent, (err) =>
             err ? console.log(err) : console.log('Successfully created README.md!')
