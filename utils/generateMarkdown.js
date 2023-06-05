@@ -1,14 +1,8 @@
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
 
+// Function that applies the license badge for the associated license to include in the README.md document
   function renderLicenseBadge (license) {
     if (license === 'GNU General Public License v3.0') {
         data.badge = '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)';
@@ -29,6 +23,7 @@ function generateMarkdown(data) {
    }
     renderLicenseBadge(data.license[0]);
   
+// Function that applies the license url and description for the associated license to include in the README.md document
     function renderLicenseLink (license) {
       if (license === 'GNU General Public License v3.0') {
           data.url = 'Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. Please refer to [License: GPL v3](https://choosealicense.com/licenses/gpl-3.0/) for more information.';
@@ -49,6 +44,7 @@ function generateMarkdown(data) {
      }
      renderLicenseLink(data.license[0]);
 
+// The README form that is used to generate the markdown file utilizing temporal literals
   return `# ${data.title}
 
  ${data.badge}
@@ -86,4 +82,5 @@ My GitHub username is ${data.github} and you can link to my profile at https://g
 For any questions, please feel free to email me at ${data.email}`;
 }
 
+// exporting the generated markdown README.md file called in index.js
 module.exports = generateMarkdown;
