@@ -29,6 +29,25 @@ function generateMarkdown(data) {
    }
     renderLicenseBadge(data.license[0]);
   
+    function renderLicenseLink (license) {
+      if (license === 'GNU General Public License v3.0') {
+          data.url = 'Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. Please refer to [License: GPL v3](https://choosealicense.com/licenses/gpl-3.0/) for more information.';
+      } else if (license === 'Mozilla Public License 2.0') {
+        data.url = 'Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work. Please refer to [License: MPL 2.0](https://choosealicense.com/licenses/mpl-2.0/) for more information.';
+      } else if (license === 'Apache License 2.0') {
+        data.url = 'A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code. Please refer to [License: Apache](https://choosealicense.com/licenses/apache-2.0/) for more information.';
+      } else if (license === 'MIT License') {
+        data.url = 'A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. Please refer to [License: MIT](https://choosealicense.com/licenses/mit/) for more information.';
+      } else if (license === 'Boost Software License 1.0') {
+        data.url = 'A simple permissive license only requiring preservation of copyright and license notices for source (and not binary) distribution. Licensed works, modifications, and larger works may be distributed under different terms and without source code. Please refer to [License: Boost](https://choosealicense.com/licenses/bsl-1.0/) for more information.';
+      } else if (license === 'The Unlicense') {
+        data.url = 'A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code. Please refer to [License: Unlicense](https://choosealicense.com/licenses/unlicense/) for more information.';
+      } else {
+         data.url = '';
+     }
+     return data.url;
+     }
+     renderLicenseLink(data.license[0]);
 
   return `# ${data.title}
 
@@ -60,6 +79,7 @@ ${data.tests}
 
 ## License
 ${data.license}
+${data.url}
 
 ## Questions
 My GitHub username is ${data.github} and you can link to my profile at https://github.com/${data.github}.  
