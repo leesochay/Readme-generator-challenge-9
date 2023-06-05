@@ -55,8 +55,13 @@ function init () {
       ])
   
       .then((answers) => {
-          const readmePageContent = generateMarkdown(answers);
-      
+        console.log(answers)  
+        const badge = 'badge';
+        answers[badge] = '';
+        const url = 'url';
+        answers[url] = '';
+        console.log(answers)
+        const readmePageContent = generateMarkdown(answers);
           fs.writeFile('README.md', readmePageContent, (err) =>
             err ? console.log(err) : console.log('Successfully created README.md!')
           );
