@@ -9,27 +9,27 @@ function init () {
       {
           type: 'input',
           name: 'title',
-          message: 'what is your title',
+          message: 'what is the title of your project?',
         },
         {
           type: 'input',
           name: 'description',
-          message: 'what is a good description',
+          message: 'How would you describe your project (motivation, problem solved, learning outcomes)?',
         },
         {
           type: 'input',
           name: 'installation',
-          message: 'What is required to install your project?',
+          message: 'What are the steps to install your project?',
         },
         {
           type: 'input',
           name: 'usage',
-          message: 'Provide instructions to use your project.',
+          message: 'How does one use your project?',
         },
         {
           type: 'input',
           name: 'contributing',
-          message: 'Provide attribution for collaborators, third party assets, tutorials, etc.',
+          message: 'Are there any collaborators, third party assets, tutorials, etc for your project (enter them here)?',
         },
         {
           type: 'input',
@@ -50,7 +50,7 @@ function init () {
         {
           type: 'input',
           name: 'email',
-          message: 'What is youur email address to connect with users?',
+          message: 'What is youur email address where users can connect with you?',
         },
       ])
   
