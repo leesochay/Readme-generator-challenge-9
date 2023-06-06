@@ -40,16 +40,11 @@ Demo Video: [LeeSochay README Generator Demo](https://drive.google.com/file/d/1Z
 ## Contributing
 Hat tip goes to
 
-Inquirer.js
-In Class Activities.
-[Inquirer.js documentation.](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+For Inquirer.js : [Inquirer.js documentation.](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
-Information on License Badges
-[Shields IO](https://shields.io/category/license)
-[Markdown License Badges for your Project: lukas-h GitHub Repository](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
+Information on License Badges: [Shields IO](https://shields.io/category/license) and [Markdown License Badges for your Project: lukas-h GitHub Repository](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
-Information on Open Source Licsenses
-[Choose a License Website](https://choosealicense.com/licenses/)
+Information on Open Source Licsenses: [Choose a License Website](https://choosealicense.com/licenses/)
 
 ## Tests
 None
