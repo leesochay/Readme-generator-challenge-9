@@ -12,7 +12,14 @@
   - [Questions](#questions)
 
 ## Description
-In GitHub, it is very important to have a README file for the projects that you are creating.  This can show the professionalism and seriousness of the developer and give them as edge when  pportunities arise. A professional README document should include a description of the project, how to install the application, how to use the application, a listing of the collaborators and third-party assets that contributed to the project, any tests for the application, licensing information, and finally contact information for questions and comments from users. The acceptance criteria consists of following the Professional README Guide [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) from  Full-Stack Blog and creating sections titled Description, Table of Contents, Installation, Usage, License (including general license information and license badge), Contributing, Tests, and Questions.
+In GitHub, it is very important to have a README file for the projects that you are creating.  This can show the professionalism and seriousness of the developer and give them as edge when  pportunities arise. A professional README document should include a description of the project, how to install the application, how to use the application, a listing of the collaborators and third-party assets that contributed to the project, any tests for the application, licensing information, and finally contact information for questions and comments from users.
+
+It is advantageous to have an application that can generate a README file by using a command-line application so more time can be used toward development. This is the week 9 challenge.
+Utilizing Nodejs, the inquirer npm package, and module esxports, the challenge is to create a command-line applcation to generate a README file in markdown language that can be easily be used in GitHub projects.
+
+The acceptance criteria consists of following the Professional README Guide [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) from  Full-Stack Blog and creating sections titled Description, Table of Contents, Installation, Usage, License (including general license information and license badge), Contributing, Tests, and Questions.
+
+This is the first challenge utilizing Node.js, packaged javascript code (Inquirer.js), and module-exports to develop an application.
 
 ## Installation
 Appication: [Inquirer.js Version 8.2.4](Installed using "npm i inquirer@8.2.4" command via Git Bash).
