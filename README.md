@@ -22,7 +22,15 @@ The acceptance criteria consists of following the Professional README Guide [Pro
 This is the first challenge utilizing Node.js, packaged javascript code (Inquirer.js), and module-exports to develop an application.
 
 ## Installation
-Appication: [Inquirer.js Version 8.2.4](Installed using "npm i inquirer@8.2.4" command via Git Bash).
+Appication:
+Node.js
+[Version 16.18.0-x64](https://nodejs.org/dist/v16.18.0/node-v16.18.0-x64.msi)
+
+Inquirer.js
+Version 8.2.4 (Installed using "npm i inquirer@8.2.4" command via Git Bash).
+
+Submission:
+Screencastify via Chrome extension.
 
 ## Usage
 The application is invoked by using the index.js command from the command-line interface (Terminal in VS Code in this instance).
