@@ -53,7 +53,7 @@ function init () {
         {
           type: 'input',
           name: 'email',
-          message: 'What is youur email address where users can connect with you?',
+          message: 'What is your email address where users can connect with you?',
         },
       ])
   // answers object generated that will used in the creation of the README.md document through the generateMarkdown function
